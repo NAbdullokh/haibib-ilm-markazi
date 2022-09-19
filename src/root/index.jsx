@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { navbarItems } from "../utils/navbarData";
+import { pageItems } from "../utils/pages";
 import NotFound from "../page/NotFound";
 
 const Root = () => {
@@ -12,7 +12,7 @@ const Root = () => {
         <Route path="/" element={<Navigate to={"/home"} />} />
         <Route element={<Navbar />}>
           <Route element={<Footer />}>
-            {navbarItems.map((value) => {
+            {pageItems.map((value) => {
               return <Route path={value.to} element={value.element} />;
             })}
           </Route>
