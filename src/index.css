@@ -8,3 +8,14 @@
 :root {
   --maxWidth: 1440px;
 }
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div {
+  display: flex;
+  flex-direction: column;
+}
