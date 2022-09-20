@@ -9,7 +9,6 @@ const Root = () => {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Navigate to={"/home"} />} />
         <Route element={<Navbar />}>
           <Route element={<Footer />}>
             {pageItems.map((value) => {

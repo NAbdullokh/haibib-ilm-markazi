@@ -7,8 +7,7 @@ export const Container = styled.div`
   padding: 20px 100px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 50px;
+  justify-content: space-between;
 `;
 
 export const IconWrapper = styled.div`

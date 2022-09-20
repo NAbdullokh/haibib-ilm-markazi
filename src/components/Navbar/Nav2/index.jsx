@@ -1,7 +1,27 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import logo from "../../../assets/icon/logo.svg";
+import Button from "../../../generic/Button";
+import { navbarItem } from "../../../utils/navbarItems";
+import { Container, ItemWrapper } from "./style";
 
 const Nav2 = () => {
-  return <div>Nav2</div>;
+  const navigate = useNavigate();
+  return (
+    <Container>
+      <img onClick={() => navigate("/")} src={logo} alt="" />
+      <ItemWrapper>
+        {navbarItem.map((value) => {
+          return (
+            <ItemWrapper.Item href={value.to}>{value.title}</ItemWrapper.Item>
+          );
+        })}
+      </ItemWrapper>
+      <Button onClick={() => navigate("/login")} width="200px" height="80px">
+        Ariza Topshirish
+      </Button>
+    </Container>
+  );
 };
 
 export default Nav2;
