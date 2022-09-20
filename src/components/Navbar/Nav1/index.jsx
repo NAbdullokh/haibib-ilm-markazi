@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, IconWrapper, TelWrapper, Text } from "./style";
+import { Container, IconWrapper, Language, TelWrapper, Text } from "./style";
 import gmail from "../../../assets/icon/email.svg";
 import location from "../../../assets/icon/location.svg";
 import dot from "../../../assets/icon/dot.svg";
@@ -19,7 +19,6 @@ const Nav1 = () => {
       </IconWrapper>
       <TelWrapper>
         <TelWrapper.Text>
-          {" "}
           <img src={dot} alt="" />
           O’zingizga qulay vaqtda qo’ng’iroq qiling
         </TelWrapper.Text>
@@ -31,6 +30,15 @@ const Nav1 = () => {
           </div>
         </IconWrapper>
       </TelWrapper>
+      <Language>
+        <Language.Text>UZ</Language.Text>
+        <p style={{ color: "white" }}>|</p>
+        <Language.Text>RU</Language.Text>
+        <p style={{ color: "white" }}>|</p>
+        <Language.Text>EN</Language.Text>
+        <p style={{ color: "white" }}>|</p>
+        <Language.Text>AR</Language.Text>
+      </Language>
     </Container>
   );
 };
