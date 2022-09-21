@@ -2,9 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  height: 7vh;
   background-color: #242c42;
-  padding: 20px 130px;
+  padding: 10px 130px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,7 +15,7 @@ export const IconWrapper = styled.div`
   gap: 10px;
 `;
 
-export const Text = styled.p`
+export const Text = styled.div`
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -62,3 +61,5 @@ Language.Text = styled.p`
   color: rgba(255, 255, 255, 0.5);
   cursor: pointer;
 `;
+
+export const Icon = styled.img``;

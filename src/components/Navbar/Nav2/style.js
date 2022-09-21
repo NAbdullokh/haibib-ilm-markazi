@@ -19,7 +19,7 @@ export const ItemWrapper = styled.div`
 ItemWrapper.Item = styled.a`
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 1px;
   line-height: 24px;
   display: flex;
   align-items: center;

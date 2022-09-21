@@ -1,5 +1,12 @@
 import React from "react";
-import { Container, IconWrapper, Language, TelWrapper, Text } from "./style";
+import {
+  Container,
+  Icon,
+  IconWrapper,
+  Language,
+  TelWrapper,
+  Text,
+} from "./style";
 import gmail from "../../../assets/icon/email.svg";
 import location from "../../../assets/icon/location.svg";
 import dot from "../../../assets/icon/dot.svg";
@@ -9,22 +16,23 @@ const Nav1 = () => {
   return (
     <Container>
       <IconWrapper>
-        <img src={gmail} alt="" />
+        <Icon src={gmail} alt="" />
         <Text>habibilmmarkazi@gmail.com</Text>
       </IconWrapper>
 
       <IconWrapper>
-        <img src={location} alt="" />
+        <Icon src={location} alt="" />
         <Text>Toshkent shaxar, Olmazor tumani, Langar 68</Text>
       </IconWrapper>
+
       <TelWrapper>
         <TelWrapper.Text>
-          <img src={dot} alt="" />
+          <Icon src={dot} alt="" />
           O’zingizga qulay vaqtda qo’ng’iroq qiling
         </TelWrapper.Text>
         <IconWrapper>
-          <img src={phone} alt="" />
-          <div className="div">
+          <Icon src={phone} alt="" />
+          <div className="flex">
             <Text>+998 (95) 506 66 69</Text>
             <Text>+998 (93) 666 66 73</Text>
           </div>

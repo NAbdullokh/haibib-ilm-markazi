@@ -6,7 +6,7 @@ export const Container = styled.div`
 
 export const EachCarousel = styled.div`
   width: 100%;
-  height: 82vh;
+  height: 81.2vh;
   position: relative;
 `;
 
@@ -19,7 +19,7 @@ export const Img = styled.img`
   }
 `;
 
-export const Text = styled.p`
+export const Title = styled.p`
   position: absolute;
   top: 30%;
   left: 130px;

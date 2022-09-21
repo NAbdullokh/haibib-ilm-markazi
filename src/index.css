@@ -3,7 +3,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
 }
 
 :root {
@@ -16,7 +15,7 @@
   justify-content: center;
 }
 
-.div {
+.flex {
   display: flex;
   flex-direction: column;
 }
