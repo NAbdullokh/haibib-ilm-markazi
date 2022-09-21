@@ -13,7 +13,9 @@ const Nav2 = () => {
       <ItemWrapper>
         {navbarItem.map((value) => {
           return (
-            <ItemWrapper.Item href={value.to}>{value.title}</ItemWrapper.Item>
+            <ItemWrapper.Item key={value.id} href={value.to}>
+              {value.title}
+            </ItemWrapper.Item>
           );
         })}
       </ItemWrapper>

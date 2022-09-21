@@ -12,7 +12,9 @@ const Root = () => {
         <Route element={<Navbar />}>
           <Route element={<Footer />}>
             {pageItems.map((value) => {
-              return <Route path={value.to} element={value.element} />;
+              return (
+                <Route key={value.id} path={value.to} element={value.element} />
+              );
             })}
           </Route>
           <Route path="*" element={<NotFound />} />

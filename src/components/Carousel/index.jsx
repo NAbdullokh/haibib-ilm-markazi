@@ -1,28 +1,27 @@
 import { Carousel } from "antd";
 import React from "react";
-const contentStyle = {
-  height: "160px",
-  color: "#fff",
-  lineHeight: "160px",
-  textAlign: "center",
-  background: "#364d79",
-};
+import { carouselData } from "../../mock/carousel";
+import { BtnWrapper, Container, EachCarousel, Img, Text } from "./style";
+import Button from "../../generic/Button";
 
 const Slider = () => (
-  <Carousel autoplay>
-    <div>
-      <h3 style={contentStyle}>1</h3>
-    </div>
-    <div>
-      <h3 style={contentStyle}>2</h3>
-    </div>
-    <div>
-      <h3 style={contentStyle}>3</h3>
-    </div>
-    <div>
-      <h3 style={contentStyle}>4</h3>
-    </div>
-  </Carousel>
+  <Container>
+    <Carousel autoplay>
+      {carouselData.map((value) => {
+        return (
+          <EachCarousel key={value.id}>
+            <Img src={value.img} />
+            <Text>{value.title}</Text>
+            <BtnWrapper>
+              <Button width="220px" height="70px">
+                Batafsil
+              </Button>
+            </BtnWrapper>
+          </EachCarousel>
+        );
+      })}
+    </Carousel>
+  </Container>
 );
 
 export default Slider;
