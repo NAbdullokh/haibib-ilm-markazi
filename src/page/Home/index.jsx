@@ -1,5 +1,7 @@
+import Slider from "../../components/Carousel";
+
 const Home = () => {
-  return;
+  return <Slider />;
 };
 
 export default Home;

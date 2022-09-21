@@ -17,9 +17,11 @@ const Nav2 = () => {
           );
         })}
       </ItemWrapper>
-      <Button onClick={() => navigate("/login")} width="200px" height="80px">
-        Ariza Topshirish
-      </Button>
+      <a href="#login">
+        <Button width="200px" height="80px">
+          Ariza Topshirish
+        </Button>
+      </a>
     </Container>
   );
 };
