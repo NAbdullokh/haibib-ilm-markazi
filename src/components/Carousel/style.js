@@ -6,7 +6,7 @@ export const Container = styled.div`
 
 export const EachCarousel = styled.div`
   width: 100%;
-  height: 81.2vh;
+  height: 82vh;
   position: relative;
 `;
 
