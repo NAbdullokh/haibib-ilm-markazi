@@ -1,12 +1,7 @@
 import React from "react";
-import { Container, Wrapper } from "./style";
+import { Card, CardWrapper, Container, Wrapper } from "./style";
 import target from "../../assets/img/target.png";
-import clock from "../../assets/img/clock.png";
-import money from "../../assets/img/money.png";
-import think from "../../assets/img/think.png";
-import teacher from "../../assets/img/teacher.png";
-import book from "../../assets/img/book.png";
-import teach from "../../assets/img/teach.png";
+import { factsData } from "../../mock/facts";
 
 const Facts = () => {
   return (
@@ -17,6 +12,21 @@ const Facts = () => {
           <Container.Img src={target} alt="target" />
           <Container.Line></Container.Line>
         </Container.Title>
+        <Container.MainTitle>
+          Tajribali va malakali ustozni izlamaslikning oqibatilari
+        </Container.MainTitle>
+        <Container.Fact>HAQIDA 6 TA FAKT</Container.Fact>
+        <CardWrapper>
+          {factsData.map((value) => {
+            return (
+              <Card key={value.id}>
+                <Card.Img src={value.img} />
+                <Card.Title>{value.title}</Card.Title>
+                <Card.Desc>{value.desc}</Card.Desc>
+              </Card>
+            );
+          })}
+        </CardWrapper>
       </Container>
     </Wrapper>
   );
