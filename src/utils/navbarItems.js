@@ -3,5 +3,5 @@ export const navbarItem = [
   { id: 3, title: "KURSLAR", to: "#courses" },
   { id: 4, title: "BIZ HAQIMIZDA", to: "#about" },
   { id: 2, title: "YANGILIKLAR", to: "#news" },
-  { id: 5, title: "HABIB - ILM MARKAZI ASOSCHISI", to: "#media" },
+  { id: 5, title: "ASOSCHI", to: "#media" },
 ];

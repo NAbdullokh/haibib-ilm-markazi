@@ -6,6 +6,7 @@ import {
   Language,
   TelWrapper,
   Text,
+  Wrapper,
 } from "./style";
 import gmail from "../../../assets/icon/email.svg";
 import location from "../../../assets/icon/location.svg";
@@ -14,40 +15,42 @@ import phone from "../../../assets/icon/phone.svg";
 
 const Nav1 = () => {
   return (
-    <Container>
-      <IconWrapper>
-        <Icon src={gmail} alt="" />
-        <Text>habibilmmarkazi@gmail.com</Text>
-      </IconWrapper>
-
-      <IconWrapper>
-        <Icon src={location} alt="" />
-        <Text>Toshkent shaxar, Olmazor tumani, Langar 68</Text>
-      </IconWrapper>
-
-      <TelWrapper>
-        <TelWrapper.Text>
-          <Icon src={dot} alt="" />
-          O’zingizga qulay vaqtda qo’ng’iroq qiling
-        </TelWrapper.Text>
+    <Wrapper>
+      <Container>
         <IconWrapper>
-          <Icon src={phone} alt="" />
-          <div className="flex">
-            <Text>+998 (95) 506 66 69</Text>
-            <Text>+998 (93) 666 66 73</Text>
-          </div>
+          <Icon src={gmail} alt="" />
+          <Text>habibilmmarkazi@gmail.com</Text>
         </IconWrapper>
-      </TelWrapper>
-      <Language>
-        <Language.Text>UZ</Language.Text>
-        <p style={{ color: "white" }}>|</p>
-        <Language.Text>RU</Language.Text>
-        <p style={{ color: "white" }}>|</p>
-        <Language.Text>EN</Language.Text>
-        <p style={{ color: "white" }}>|</p>
-        <Language.Text>AR</Language.Text>
-      </Language>
-    </Container>
+
+        <IconWrapper>
+          <Icon src={location} alt="" />
+          <Text>Toshkent shaxar, Olmazor tumani, Langar 68</Text>
+        </IconWrapper>
+
+        <TelWrapper>
+          <TelWrapper.Text>
+            <Icon src={dot} alt="" />
+            O’zingizga qulay vaqtda qo’ng’iroq qiling
+          </TelWrapper.Text>
+          <IconWrapper>
+            <Icon src={phone} alt="" />
+            <div className="flex">
+              <Text>+998 (95) 506 66 69</Text>
+              <Text>+998 (93) 666 66 73</Text>
+            </div>
+          </IconWrapper>
+        </TelWrapper>
+        <Language>
+          <Language.Text>UZ</Language.Text>
+          <p style={{ color: "white" }}>|</p>
+          <Language.Text>RU</Language.Text>
+          <p style={{ color: "white" }}>|</p>
+          <Language.Text>EN</Language.Text>
+          <p style={{ color: "white" }}>|</p>
+          <Language.Text>AR</Language.Text>
+        </Language>
+      </Container>
+    </Wrapper>
   );
 };
 

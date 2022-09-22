@@ -1,12 +1,26 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
   width: 100%;
   background-color: #242c42;
+`;
+
+export const Container = styled.div`
+  width: 100%;
   padding: 10px 130px;
+  max-width: var(--maxWidth);
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media (max-width: 1450px) {
+    padding: 10px 50px;
+  }
+  @media (max-width: 880px) {
+    padding: 10px 20px;
+  }
 `;
 
 export const IconWrapper = styled.div`
