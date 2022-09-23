@@ -7,11 +7,11 @@ const Facts = () => {
   return (
     <Wrapper>
       <Container>
-        <Container.Title>
-          <Container.Line></Container.Line>
+        <div className="titleWrap">
+          <div className="line"></div>
           <Container.Img src={target} alt="target" />
-          <Container.Line></Container.Line>
-        </Container.Title>
+          <div className="line"></div>
+        </div>
         <Container.MainTitle>
           Tajribali va malakali ustozni izlamaslikning oqibatilari
         </Container.MainTitle>

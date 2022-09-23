@@ -17,19 +17,7 @@ export const Container = styled.div`
   margin: auto;
 `;
 
-Container.Title = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 10px;
-`;
-
 Container.Img = styled.img``;
-
-Container.Line = styled.div`
-  width: 100px;
-  height: 6px;
-  background-color: #009f3c;
-`;
 
 Container.MainTitle = styled.p`
   font-style: normal;
