@@ -1,14 +1,12 @@
 import React from "react";
-import { Container, Wrapper, CollapseStyle } from "./style";
+import { Container, Wrapper, CollapseStyle, Flexing, Div } from "./style";
 import question from "../../assets/img/question.png";
 import { questionData } from "../../mock/question";
+import bg from "../../assets/img/bg.png";
 
 const { Panel } = CollapseStyle;
 
 const Question = () => {
-  const onChange = (key) => {
-    console.log(key);
-  };
   return (
     <Wrapper>
       <Container>
@@ -18,15 +16,29 @@ const Question = () => {
           <div className="line"></div>
         </div>
         <Container.Title>Ko’p beriladigan savollar</Container.Title>
-        <CollapseStyle defaultActiveKey={["1"]} onChange={onChange}>
+        <CollapseStyle defaultActiveKey={["1"]}>
           {questionData.map((value) => {
             return (
-              <Panel header={<div>{value.title}</div>} key={value.id}>
-                <p>{value.item}</p>
+              <Panel
+                style={{ backgroundColor: "#242c41", marginBottom: "20px" }}
+                header={
+                  <Flexing>
+                    <Div>
+                      <Flexing.Circle>{value.id}</Flexing.Circle>
+                      <Flexing.Title>{value.title}</Flexing.Title>
+                    </Div>
+                  </Flexing>
+                }
+                key={value.id}
+              >
+                <div>
+                  <CollapseStyle.Text>{value.item}</CollapseStyle.Text>
+                </div>
               </Panel>
             );
           })}
         </CollapseStyle>
+        <img src={bg} alt="" />
       </Container>
     </Wrapper>
   );
