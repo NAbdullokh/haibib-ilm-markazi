@@ -48,7 +48,6 @@ ItemWrapper.Item = styled.a`
   align-items: center;
   text-align: center;
   color: #ffffff;
-  border-bottom: 1px solid #fff;
   :hover {
     border-bottom: 1px solid #242c42;
     color: #242c42;

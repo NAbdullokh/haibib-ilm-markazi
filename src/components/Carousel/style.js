@@ -13,7 +13,7 @@ export const EachCarousel = styled.div`
 export const Img = styled.img`
   width: 100%;
   height: 100%;
-  filter: brightness(40%);
+  /* filter: brightness(40%); */
   @media (max-width: 650px) {
     position: relative;
   }
