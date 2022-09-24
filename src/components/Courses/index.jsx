@@ -1,6 +1,9 @@
 import React from "react";
-import { Container, Wrapper } from "./style";
+import { Card, Container, Icon, Wrapper } from "./style";
 import courses from "../../assets/img/courses.png";
+import { CardWrapper } from "../Facts/style";
+import { courseData } from "../../mock/courses";
+import right from "../../assets/icon/right.svg";
 
 const Courses = () => {
   return (
@@ -13,6 +16,18 @@ const Courses = () => {
         </div>
         <Container.Title>O’QUV KURSLARIMIZ</Container.Title>
         <Container.Desc>BIZ BILAN TURLI SOXALARNI O’RGANING</Container.Desc>
+        <CardWrapper>
+          {courseData.map((value) => {
+            return (
+              <Card key={value.id}>
+                <img src={value.img} alt={value.title} />
+                <Card.Title>
+                  {value.title} <Icon src={right} alt="" />
+                </Card.Title>
+              </Card>
+            );
+          })}
+        </CardWrapper>
       </Container>
     </Wrapper>
   );

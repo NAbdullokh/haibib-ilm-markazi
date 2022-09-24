@@ -14,6 +14,9 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  @media (max-width: 1450px) {
+    padding: 25px 50px;
+  }
 `;
 
 Container.Title = styled.p`
@@ -37,4 +40,37 @@ Container.Desc = styled.p`
   align-items: center;
   text-align: center;
   color: #000000;
+`;
+
+export const Icon = styled.img`
+  width: 20px;
+  transition: 0.2s;
+`;
+
+export const Card = styled.div`
+  display: flex;
+  transition: 0.2s;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 0 50px 20px 0;
+  :hover {
+    transform: scale(1.02);
+    cursor: pointer;
+  }
+  &:hover ${Icon} {
+    transform: translateX(5px);
+  }
+`;
+
+Card.Title = styled.p`
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  gap: 8px;
 `;
