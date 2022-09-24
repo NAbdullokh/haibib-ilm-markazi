@@ -175,3 +175,8 @@ export const Div = styled.div`
   display: flex;
   align-items: center;
 `;
+
+export const BgImg = styled.img`
+  margin-top: 30px;
+  width: 100%;
+`;

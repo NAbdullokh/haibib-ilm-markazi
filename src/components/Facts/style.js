@@ -12,9 +12,13 @@ export const Container = styled.div`
   max-width: var(--maxWidth);
   display: flex;
   flex-direction: column;
+  padding: 0 130px;
   align-items: center;
   flex-wrap: wrap;
   margin: auto;
+  @media (max-width: 1450px) {
+    padding: 0 50px;
+  }
 `;
 
 Container.Img = styled.img``;
@@ -44,9 +48,10 @@ Container.Fact = styled.p`
 `;
 
 export const CardWrapper = styled.div`
+  margin-top: 20px;
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
 `;
@@ -55,13 +60,20 @@ export const Card = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 430px;
-  margin: 20px;
+  width: 350px;
+  padding: 20px 10px;
+  margin: 10px;
+  @media (max-width: 860px) {
+    width: 250px;
+  }
+  @media (max-width: 660px) {
+    width: 100%;
+  }
 `;
 
 Card.Img = styled.img`
-  width: 30%;
-  height: 30%;
+  width: 90px;
+  height: 90px;
 `;
 
 Card.Title = styled.p`

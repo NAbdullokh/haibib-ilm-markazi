@@ -1,5 +1,12 @@
 import React from "react";
-import { Container, Wrapper, CollapseStyle, Flexing, Div } from "./style";
+import {
+  Container,
+  Wrapper,
+  CollapseStyle,
+  Flexing,
+  Div,
+  BgImg,
+} from "./style";
 import question from "../../assets/img/question.png";
 import { questionData } from "../../mock/question";
 import bg from "../../assets/img/bg.png";
@@ -16,7 +23,7 @@ const Question = () => {
           <div className="line"></div>
         </div>
         <Container.Title>Ko’p beriladigan savollar</Container.Title>
-        <CollapseStyle defaultActiveKey={["1"]}>
+        <CollapseStyle>
           {questionData.map((value) => {
             return (
               <Panel
@@ -38,7 +45,7 @@ const Question = () => {
             );
           })}
         </CollapseStyle>
-        <img src={bg} alt="" />
+        <BgImg src={bg} alt="" />
       </Container>
     </Wrapper>
   );

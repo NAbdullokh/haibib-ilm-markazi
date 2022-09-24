@@ -1,4 +1,5 @@
 import Slider from "../../components/Carousel";
+import Courses from "../../components/Courses";
 import Facts from "../../components/Facts";
 import Question from "../../components/Question";
 
@@ -8,6 +9,7 @@ const Home = () => {
       <Slider />
       <Facts />
       <Question />
+      <Courses />
     </div>
   );
 };
