@@ -35,3 +35,32 @@
 .ant-collapse-expand-icon {
   display: none;
 }
+
+.navItem {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+.navItem:hover {
+  color: white;
+}
+.navItem::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s;
+}
+
+.navItem:hover::after {
+  width: 100%;
+}
+@media (max-width: 1230px) {
+  .navItem {
+    font-size: 14px;
+  }
+}

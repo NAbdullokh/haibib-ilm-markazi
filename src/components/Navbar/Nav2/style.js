@@ -48,10 +48,7 @@ ItemWrapper.Item = styled.a`
   align-items: center;
   text-align: center;
   color: #ffffff;
-  :hover {
-    border-bottom: 1px solid #242c42;
-    color: #242c42;
-  }
+
   @media (max-width: 1230px) {
     font-size: 14px;
   }

@@ -14,9 +14,9 @@ const Nav2 = () => {
         <ItemWrapper>
           {navbarItem.map((value) => {
             return (
-              <ItemWrapper.Item key={value.id} href={value.to}>
+              <a className="navItem" key={value.id} href={value.to}>
                 {value.title}
-              </ItemWrapper.Item>
+              </a>
             );
           })}
         </ItemWrapper>

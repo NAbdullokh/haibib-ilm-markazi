@@ -64,7 +64,7 @@ export const Card = styled.div`
   padding: 20px 10px;
   margin: 10px;
   @media (max-width: 860px) {
-    width: 250px;
+    flex: 1 1 15rem;
   }
   @media (max-width: 660px) {
     width: 100%;
