@@ -7,13 +7,14 @@ import tick from "../../assets/icon/tick.svg";
 const About = () => {
   return (
     <Wrapper>
-      <img src={bg} alt="" />
       <Container>
         <div className="titleWrap">
           <div className="line"></div>
           <Container.Img src={tick} alt="question" />
           <div className="line"></div>
         </div>
+        <Container.Title>BIZ HAQIMIZDA</Container.Title>
+        <Container.Desc>BIZ HAQIMIZDA MUHIM FAKTLAR</Container.Desc>
       </Container>
     </Wrapper>
   );
