@@ -1,3 +1,4 @@
+import About from "../../components/About";
 import Slider from "../../components/Carousel";
 import Courses from "../../components/Courses";
 import Facts from "../../components/Facts";
@@ -10,6 +11,7 @@ const Home = () => {
       <Facts />
       <Question />
       <Courses />
+      <About />
     </div>
   );
 };

@@ -10,3 +10,5 @@ export const Container = styled.div`
   width: 100%;
   max-width: var(--maxWidth);
 `;
+
+Container.Img = styled.img``;
