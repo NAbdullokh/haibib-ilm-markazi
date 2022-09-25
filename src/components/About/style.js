@@ -41,3 +41,38 @@ Container.Desc = styled.p`
   text-align: center;
   color: #ffffff;
 `;
+
+export const CounterWrap = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* gap: 120px; */
+  flex-wrap: wrap;
+`;
+
+export const EachWrap = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+CounterWrap.Number = styled.p`
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 110px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+`;
+
+CounterWrap.Teacher = styled.p`
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+`;
