@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { pageItems } from "../utils/pages";
 import NotFound from "../page/NotFound";
+import Login from "../page/Login";
 
 const Root = () => {
   return (
@@ -19,6 +20,7 @@ const Root = () => {
           </Route>
           <Route path="*" element={<NotFound />} />
         </Route>
+        <Route path="/login" element={<Login />} />
       </Routes>
     </div>
   );

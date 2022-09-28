@@ -39,7 +39,7 @@ Container.MainTitle = styled.p`
   margin-top: 25px;
   @media (max-width: 370px) {
     font-size: 25px;
-    width: 90%;
+    width: 84%;
   }
 `;
 

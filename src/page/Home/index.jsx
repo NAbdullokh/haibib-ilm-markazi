@@ -3,6 +3,7 @@ import Slider from "../../components/Carousel";
 import Courses from "../../components/Courses";
 import Facts from "../../components/Facts";
 import Question from "../../components/Question";
+import Choose from "../../components/WhyChoose";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Question />
       <Courses />
       <About />
+      <Choose />
     </div>
   );
 };
