@@ -6,7 +6,7 @@ import right from "../../assets/icon/right.svg";
 
 const Courses = () => {
   return (
-    <Wrapper>
+    <Wrapper id="courses">
       <Container>
         <div className="titleWrap">
           <div className="line"></div>

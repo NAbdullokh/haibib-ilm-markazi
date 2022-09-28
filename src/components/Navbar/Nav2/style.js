@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Container = styled.div`
+  position: relative;
   width: 100%;
   max-width: var(--maxWidth);
   padding: 10px 130px;
@@ -19,6 +20,9 @@ export const Container = styled.div`
     padding: 10px 50px;
   }
   @media (max-width: 880px) {
+    padding: 10px 20px 60px;
+  }
+  @media (max-width: 570px) {
     padding: 10px 20px;
   }
 `;
@@ -35,21 +39,18 @@ export const ItemWrapper = styled.div`
     margin: 0 30px;
   }
   @media (max-width: 880px) {
+    position: absolute;
+    width: 90%;
+    left: 0;
+    top: 110px;
+  }
+  @media (max-width: 570px) {
     display: none;
   }
 `;
 
-ItemWrapper.Item = styled.div`
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #ffffff;
-
-  @media (max-width: 1230px) {
-    font-size: 14px;
+export const BtnWrapper = styled.div`
+  @media (max-width: 570px) {
+    display: none;
   }
 `;

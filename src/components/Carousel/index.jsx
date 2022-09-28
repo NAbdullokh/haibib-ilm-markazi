@@ -12,7 +12,7 @@ import {
 import Button from "../../generic/Button";
 
 const Slider = () => (
-  <Container>
+  <Container id="main">
     <Carousel autoplay>
       {carouselData.map((value) => {
         return (

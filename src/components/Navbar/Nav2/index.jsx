@@ -1,9 +1,10 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../../../assets/icon/logo.svg";
 import Button from "../../../generic/Button";
 import { navbarItem } from "../../../utils/navbarItems";
-import { Container, ItemWrapper, Wrapper } from "./style";
+import Nav from "../Hamburger";
+import { BtnWrapper, Container, ItemWrapper, Wrapper } from "./style";
 
 const Nav2 = () => {
   const navigate = useNavigate();
@@ -20,11 +21,13 @@ const Nav2 = () => {
             );
           })}
         </ItemWrapper>
-        <a href="#login">
+
+        <BtnWrapper onClick={() => navigate("/login")}>
           <Button width="200px" height="80px">
             Ariza Topshirish
           </Button>
-        </a>
+        </BtnWrapper>
+        <Nav />
       </Container>
     </Wrapper>
   );

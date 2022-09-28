@@ -5,7 +5,7 @@ const getType = (type) => {
     case "primary":
       return {
         color: "#46A358",
-        border: " 1px solid #46A358",
+        border: "1px solid #46A358",
       };
 
     default:
