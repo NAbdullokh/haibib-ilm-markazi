@@ -4,6 +4,7 @@ export const Wrapper = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 40px;
 `;
 
 export const Container = styled.div`
@@ -17,34 +18,24 @@ export const Container = styled.div`
   @media (max-width: 1450px) {
     padding: 25px 50px;
   }
-`;
-
-Container.Title = styled.p`
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 43px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #000000;
-  margin-top: 15px;
-`;
-
-Container.Desc = styled.p`
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 27px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #000000;
+  @media (max-width: 400px) {
+    padding: 25px 20px;
+  }
 `;
 
 export const Icon = styled.img`
   width: 20px;
   transition: 0.2s;
+`;
+
+export const CardWrapper = styled.div`
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5%;
 `;
 
 export const Card = styled.div`
@@ -53,7 +44,7 @@ export const Card = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  margin: 0 50px 20px 0;
+  margin-bottom: 20px;
   :hover {
     transform: scale(1.02);
     cursor: pointer;

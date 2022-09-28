@@ -19,38 +19,12 @@ export const Container = styled.div`
   @media (max-width: 1450px) {
     padding: 25px 50px;
   }
+  @media (max-width: 400px) {
+    padding: 25px 20px;
+  }
 `;
 
 Container.Img = styled.img``;
-
-Container.Title = styled.p`
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 41px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #ffffff;
-  margin-top: 24px;
-  @media (max-width: 350px) {
-    font-size: 20px;
-  }
-`;
-
-Container.Desc = styled.p`
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #ffffff;
-  @media (max-width: 350px) {
-    font-size: 12px;
-  }
-`;
 
 export const CounterWrap = styled.div`
   width: 100%;

@@ -14,8 +14,8 @@ const About = () => {
           <Container.Img src={tick} alt="question" />
           <div className="line"></div>
         </div>
-        <Container.Title>BIZ HAQIMIZDA</Container.Title>
-        <Container.Desc>BIZ HAQIMIZDA MUHIM FAKTLAR</Container.Desc>
+        <p className="title">BIZ HAQIMIZDA</p>
+        <p className="desc">BIZ HAQIMIZDA MUHIM FAKTLAR</p>
         <CounterWrap>
           {countData.map((value) => {
             return (

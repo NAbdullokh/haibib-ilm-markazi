@@ -19,6 +19,9 @@ export const Container = styled.div`
   @media (max-width: 1450px) {
     padding: 25px 50px;
   }
+  @media (max-width: 400px) {
+    padding: 25px 20px;
+  }
 
   .ant-collapse {
     width: 100%;
@@ -86,15 +89,6 @@ export const Container = styled.div`
 `;
 
 Container.Img = styled.img``;
-
-Container.Title = styled.p`
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 39px;
-  color: #ffffff;
-  margin-top: 20px;
-`;
 
 export const CollapseStyle = styled(Collapse)`
   width: 100%;

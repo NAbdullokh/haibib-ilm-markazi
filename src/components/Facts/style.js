@@ -19,6 +19,9 @@ export const Container = styled.div`
   @media (max-width: 1450px) {
     padding: 0 50px;
   }
+  @media (max-width: 400px) {
+    padding: 25px 0px;
+  }
 `;
 
 Container.Img = styled.img``;
@@ -34,6 +37,10 @@ Container.MainTitle = styled.p`
   text-transform: uppercase;
   color: #000000;
   margin-top: 25px;
+  @media (max-width: 370px) {
+    font-size: 25px;
+    width: 90%;
+  }
 `;
 
 Container.Fact = styled.p`
@@ -45,6 +52,10 @@ Container.Fact = styled.p`
   align-items: center;
   text-align: center;
   color: #f10b0b;
+  margin: auto;
+  @media (max-width: 370px) {
+    font-size: 18px;
+  }
 `;
 
 export const CardWrapper = styled.div`
@@ -54,6 +65,9 @@ export const CardWrapper = styled.div`
   align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
+  @media (max-width: 400px) {
+    padding: 0px 20px;
+  }
 `;
 
 export const Card = styled.div`
@@ -62,7 +76,6 @@ export const Card = styled.div`
   flex-direction: column;
   width: 350px;
   padding: 20px 10px;
-  margin: 10px;
   @media (max-width: 860px) {
     flex: 1 1 15rem;
   }
@@ -74,6 +87,10 @@ export const Card = styled.div`
 Card.Img = styled.img`
   width: 90px;
   height: 90px;
+  @media (max-width: 370px) {
+    width: 50px;
+    height: 50px;
+  }
 `;
 
 Card.Title = styled.p`
@@ -86,6 +103,9 @@ Card.Title = styled.p`
   align-items: center;
   text-align: center;
   color: #000000;
+  @media (max-width: 370px) {
+    font-size: 25px;
+  }
 `;
 
 Card.Desc = styled.p`
@@ -98,4 +118,7 @@ Card.Desc = styled.p`
   align-items: center;
   text-align: center;
   color: #000000;
+  @media (max-width: 370px) {
+    font-size: 13px;
+  }
 `;

@@ -59,8 +59,62 @@
 .navItem:hover::after {
   width: 100%;
 }
+
+.title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 41px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 24px;
+}
+
+.desc {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
 @media (max-width: 1230px) {
   .navItem {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 350px) {
+  .title {
+    font-size: 20px;
+  }
+  .desc {
+    font-size: 12px;
+  }
+  .course-img {
+    width: 80%;
+  }
+  .ant-collapse-item::before {
+    content: "+";
+    background: #eff2f7;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    color: #007933;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    z-index: 999;
   }
 }

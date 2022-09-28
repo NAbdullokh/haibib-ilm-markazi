@@ -22,7 +22,7 @@ const Question = () => {
           <Container.Img src={question} alt="question" />
           <div className="line"></div>
         </div>
-        <Container.Title>Ko’p beriladigan savollar</Container.Title>
+        <p className="title">Ko’p beriladigan savollar</p>
         <CollapseStyle>
           {questionData.map((value) => {
             return (
