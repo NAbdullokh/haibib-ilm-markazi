@@ -6,6 +6,7 @@ import {
   Language,
   TelWrapper,
   Text,
+  TwoWrapper,
   Wrapper,
 } from "./style";
 import gmail from "../../../assets/icon/email.svg";
@@ -17,15 +18,17 @@ const Nav1 = () => {
   return (
     <Wrapper>
       <Container>
-        <IconWrapper>
-          <Icon src={gmail} alt="" />
-          <Text>habibilmmarkazi@gmail.com</Text>
-        </IconWrapper>
+        <TwoWrapper>
+          <IconWrapper>
+            <Icon src={gmail} alt="" />
+            <Text>habibilmmarkazi@gmail.com</Text>
+          </IconWrapper>
 
-        <IconWrapper>
-          <Icon src={location} alt="" />
-          <Text>Toshkent shaxar, Olmazor tumani, Langar 68</Text>
-        </IconWrapper>
+          <IconWrapper>
+            <Icon src={location} alt="" />
+            <Text>Toshkent shaxar, Olmazor tumani, Langar 68</Text>
+          </IconWrapper>
+        </TwoWrapper>
 
         <TelWrapper>
           <TelWrapper.Text>
