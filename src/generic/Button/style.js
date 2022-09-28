@@ -38,6 +38,10 @@ const Container = styled.div`
     transform: scale(0.98);
     opacity: 0.7;
   }
+  @media (max-width: 500px) {
+    width: 150px;
+    height: 60px;
+  }
 `;
 
 export { Container };

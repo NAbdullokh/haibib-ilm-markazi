@@ -17,7 +17,7 @@ const Slider = () => (
       {carouselData.map((value) => {
         return (
           <EachCarousel key={value.id}>
-            <Img src={value.img} />
+            {/* <Img src={value.img} /> */}
             <TextWrapper>
               <Title>{value.title}</Title>
               <BtnWrapper>
