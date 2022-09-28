@@ -23,7 +23,7 @@ export const Container = styled.div`
   }
 `;
 
-export const ItemWrapper = styled.a`
+export const ItemWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 50px;
@@ -39,7 +39,7 @@ export const ItemWrapper = styled.a`
   }
 `;
 
-ItemWrapper.Item = styled.a`
+ItemWrapper.Item = styled.div`
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

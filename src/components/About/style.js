@@ -16,6 +16,9 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 25px 130px;
+  @media (max-width: 1450px) {
+    padding: 25px 50px;
+  }
 `;
 
 Container.Img = styled.img``;
@@ -29,6 +32,10 @@ Container.Title = styled.p`
   align-items: center;
   text-align: center;
   color: #ffffff;
+  margin-top: 24px;
+  @media (max-width: 350px) {
+    font-size: 20px;
+  }
 `;
 
 Container.Desc = styled.p`
@@ -40,18 +47,23 @@ Container.Desc = styled.p`
   align-items: center;
   text-align: center;
   color: #ffffff;
+  @media (max-width: 350px) {
+    font-size: 12px;
+  }
 `;
 
 export const CounterWrap = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  /* gap: 120px; */
   flex-wrap: wrap;
+  gap: 15%;
 `;
 
 export const EachWrap = styled.div`
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
 `;
 
@@ -59,20 +71,27 @@ CounterWrap.Number = styled.p`
   font-style: normal;
   font-weight: 700;
   font-size: 96px;
-  line-height: 110px;
   display: flex;
   align-items: center;
   text-align: center;
   color: #ffffff;
+  border-bottom: 10px solid #079f16;
+  @media (max-width: 1115px) {
+    font-size: 70px;
+  }
 `;
 
-CounterWrap.Teacher = styled.p`
+CounterWrap.Name = styled.p`
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
-  line-height: 46px;
   display: flex;
   align-items: center;
   text-align: center;
   color: #ffffff;
+  margin-top: -90px;
+  @media (max-width: 1115px) {
+    font-size: 30px;
+    margin-top: -60px;
+  }
 `;
