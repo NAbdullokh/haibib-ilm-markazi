@@ -13,6 +13,7 @@ import gmail from "../../../assets/icon/email.svg";
 import location from "../../../assets/icon/location.svg";
 import dot from "../../../assets/icon/dot.svg";
 import phone from "../../../assets/icon/phone.svg";
+import Option from "./option";
 
 const Nav1 = () => {
   return (
@@ -44,13 +45,14 @@ const Nav1 = () => {
           </IconWrapper>
         </TelWrapper>
         <Language>
-          <Language.Text>UZ</Language.Text>
-          <p style={{ color: "white" }}>|</p>
-          <Language.Text>RU</Language.Text>
-          <p style={{ color: "white" }}>|</p>
-          <Language.Text>EN</Language.Text>
-          <p style={{ color: "white" }}>|</p>
-          <Language.Text>AR</Language.Text>
+          <div className="box">
+            <select>
+              <option>UZ</option>
+              <option>EN</option>
+              <option>AR</option>
+              <option>RU</option>
+            </select>
+          </div>
         </Language>
       </Container>
     </Wrapper>
@@ -58,3 +60,13 @@ const Nav1 = () => {
 };
 
 export default Nav1;
+
+{
+  /* <Language.Text>UZ</Language.Text>
+<p style={{ color: "white" }}>|</p>
+<Language.Text>RU</Language.Text>
+<p style={{ color: "white" }}>|</p>
+<Language.Text>EN</Language.Text>
+<p style={{ color: "white" }}>|</p>
+<Language.Text>AR</Language.Text> */
+}
