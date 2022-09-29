@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import {
   Container,
   Icon,
@@ -13,60 +13,77 @@ import gmail from "../../../assets/icon/email.svg";
 import location from "../../../assets/icon/location.svg";
 import dot from "../../../assets/icon/dot.svg";
 import phone from "../../../assets/icon/phone.svg";
-import Option from "./option";
+import i18 from "i18next";
+import { initReactI18next } from "react-i18next";
+import { useTransition } from "react";
 
+const translationEn = { address: "Address" };
+const translationUz = {
+  address: "Toshkent shaxar, Olmazor tumani, Langar 68",
+};
+const translationRu = { address: "Адресс" };
+const translationAr = { address: "arab" };
+
+i18.use(initReactI18next).init({
+  resources: {
+    en: { translation: translationEn },
+    uz: { translation: translationUz },
+    ru: { translation: translationRu },
+    ar: { translation: translationAr },
+  },
+  lang: "uz",
+  fallbackLng: "uz",
+  interpolation: { escapeValue: false },
+});
 const Nav1 = () => {
+  const { t } = useTransition();
+
+  const onChange = (e) => {
+    i18.changeLanguage(e.target.value);
+  };
   return (
-    <Wrapper>
-      <Container>
-        <TwoWrapper>
-          <IconWrapper>
-            <Icon src={gmail} alt="" />
-            <Text>habibilmmarkazi@gmail.com</Text>
-          </IconWrapper>
+    <Suspense fallback="Loading..">
+      <Wrapper>
+        <Container>
+          <TwoWrapper>
+            <IconWrapper>
+              <Icon src={gmail} alt="" />
+              <Text>habibilmmarkazi@gmail.com</Text>
+            </IconWrapper>
 
-          <IconWrapper>
-            <Icon src={location} alt="" />
-            <Text>Toshkent shaxar, Olmazor tumani, Langar 68</Text>
-          </IconWrapper>
-        </TwoWrapper>
+            <IconWrapper>
+              <Icon src={location} alt="" />
+              <Text>{t("address")}</Text>
+            </IconWrapper>
+          </TwoWrapper>
 
-        <TelWrapper>
-          <TelWrapper.Text>
-            <Icon src={dot} alt="" />
-            O’zingizga qulay vaqtda qo’ng’iroq qiling
-          </TelWrapper.Text>
-          <IconWrapper>
-            <Icon src={phone} alt="" />
-            <div className="flex">
-              <Text>+998 (95) 506 66 69</Text>
-              <Text>+998 (93) 666 66 73</Text>
+          <TelWrapper>
+            <TelWrapper.Text>
+              <Icon src={dot} alt="" />
+              O’zingizga qulay vaqtda qo’ng’iroq qiling
+            </TelWrapper.Text>
+            <IconWrapper>
+              <Icon src={phone} alt="" />
+              <div className="flex">
+                <Text>+998 (95) 506 66 69</Text>
+                <Text>+998 (93) 666 66 73</Text>
+              </div>
+            </IconWrapper>
+          </TelWrapper>
+          <Language>
+            <div className="box">
+              <select name="language" onChange={onChange}>
+                <option value="uz">UZ</option>
+                <option value="en">EN</option>
+                <option value="ar">AR</option>
+                <option value="ru">RU</option>
+              </select>
             </div>
-          </IconWrapper>
-        </TelWrapper>
-        <Language>
-          <div className="box">
-            <select>
-              <option>UZ</option>
-              <option>EN</option>
-              <option>AR</option>
-              <option>RU</option>
-            </select>
-          </div>
-        </Language>
-      </Container>
-    </Wrapper>
+          </Language>
+        </Container>
+      </Wrapper>
+    </Suspense>
   );
 };
 
 export default Nav1;
-
-{
-  /* <Language.Text>UZ</Language.Text>
-<p style={{ color: "white" }}>|</p>
-<Language.Text>RU</Language.Text>
-<p style={{ color: "white" }}>|</p>
-<Language.Text>EN</Language.Text>
-<p style={{ color: "white" }}>|</p>
-<Language.Text>AR</Language.Text> */
-}
