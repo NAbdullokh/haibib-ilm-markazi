@@ -19,7 +19,9 @@ export const RightNav = ({ open }) => {
             key={value.id}
             to={value.path}
           >
-            <a className="navbarTitle">{value.title}</a>
+            <a href={value.to} className="navbarTitle">
+              {value.title}
+            </a>
           </NavLink>
         );
       })}

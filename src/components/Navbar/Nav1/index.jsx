@@ -15,7 +15,8 @@ import dot from "../../../assets/icon/dot.svg";
 import phone from "../../../assets/icon/phone.svg";
 import i18 from "i18next";
 import { initReactI18next } from "react-i18next";
-import { useTransition } from "react";
+import i18next from "i18next";
+import { useTranslation } from "react-i18next";
 
 const translationEn = { address: "Address" };
 const translationUz = {
@@ -31,15 +32,15 @@ i18.use(initReactI18next).init({
     ru: { translation: translationRu },
     ar: { translation: translationAr },
   },
-  lang: "uz",
-  fallbackLng: "uz",
+  lang: "en",
+  fallbackLng: "en",
   interpolation: { escapeValue: false },
 });
 const Nav1 = () => {
-  const { t } = useTransition();
+  const { t } = useTranslation();
 
   const onChange = (e) => {
-    i18.changeLanguage(e.target.value);
+    i18next.changeLanguage(e.target.value);
   };
   return (
     <Suspense fallback="Loading..">

@@ -5,7 +5,6 @@ import {
   BtnWrapper,
   Container,
   EachCarousel,
-  Img,
   TextWrapper,
   Title,
 } from "./style";

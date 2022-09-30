@@ -1,5 +1,4 @@
 import Home from "../page/Home";
-import Login from "../page/Login";
 import Ariza from "../page/Ariza";
 
 export const pageItems = [

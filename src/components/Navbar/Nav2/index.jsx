@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import logo from "../../../assets/icon/logo.svg";
 import Button from "../../../generic/Button";
 import { navbarItem } from "../../../utils/navbarItems";
