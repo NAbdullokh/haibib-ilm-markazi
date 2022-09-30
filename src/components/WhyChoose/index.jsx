@@ -1,7 +1,15 @@
 import React from "react";
-import { Box1, Box2, BoxWrapper, Container, Wrapper } from "./style";
+import {
+  Box1,
+  Box2,
+  BoxWrapper,
+  BtnWrapper,
+  Container,
+  Wrapper,
+} from "./style";
 import cup from "../../assets/img/cup.png";
 import Button from "../../generic/Button";
+import { Link } from "react-router-dom";
 
 const Choose = () => {
   return (
@@ -18,6 +26,7 @@ const Choose = () => {
               maxrajlarni “HABIB ilm markazi”da zamonaviy uslubda o`tishni
               boshladi va qattiq talabchanlikni yo`lga qo`ydi:
             </Box1.Desc>
+            <Box1.Img src={cup} alt="" />
             <Box1.Desc>
               1) Ko`p arab tili ustozlarining malakasini oshirish va yangi
               usulni qo’llash;
@@ -43,12 +52,16 @@ const Choose = () => {
             </Box1.Desc>
           </Box1>
           <Box2>
-            <img src={cup} alt="" />
+            <Box2.Img src={cup} alt="" />
           </Box2>
         </BoxWrapper>
-        <Button mt="40" type="primary" width="260px" height="60px">
-          BIZGA QO’SHILING
-        </Button>
+        <Link to="/login">
+          <BtnWrapper>
+            <Button mt="40" type="primary" height="60px">
+              BIZGA QO’SHILING
+            </Button>
+          </BtnWrapper>
+        </Link>
       </Container>
     </Wrapper>
   );

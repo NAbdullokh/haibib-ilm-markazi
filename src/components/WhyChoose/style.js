@@ -25,6 +25,9 @@ export const Container = styled.div`
 export const BoxWrapper = styled.div`
   display: flex;
   width: 100%;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 
 export const Box1 = styled.div`
@@ -32,6 +35,20 @@ export const Box1 = styled.div`
   display: flex;
   flex-direction: column;
   padding-right: 30px;
+  @media (max-width: 800px) {
+    padding: 0px;
+  }
+`;
+
+Box1.Img = styled.img`
+  display: none;
+  @media (max-width: 800px) {
+    display: block;
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    padding: 8px 0 20px 0;
+  }
 `;
 
 Box1.Title = styled.p`
@@ -42,6 +59,14 @@ Box1.Title = styled.p`
   display: flex;
   align-items: center;
   color: #ffffff;
+  @media (max-width: 800px) {
+    text-align: center;
+    font-size: 40px;
+  }
+  @media (max-width: 550px) {
+    text-align: center;
+    font-size: 26px;
+  }
 `;
 
 Box1.Desc = styled.p`
@@ -52,11 +77,27 @@ Box1.Desc = styled.p`
   display: flex;
   text-align: justify;
   color: #ffffff;
+  @media (max-width: 800px) {
+    text-align: center;
+  }
 `;
 
 export const Box2 = styled.div`
-  flex: 0.5;
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
+`;
+
+Box2.Img = styled.img`
+  @media (max-width: 800px) {
+    display: none;
+  }
+`;
+
+export const BtnWrapper = styled.div`
+  width: 260px;
+  @media (max-width: 800px) {
+    margin: auto;
+  }
 `;

@@ -7,6 +7,7 @@ import ScrollTrigger from "react-scroll-trigger";
 
 const About = () => {
   const [counterOn, setCounterOn] = useState(false);
+
   return (
     <Wrapper>
       <Container>
