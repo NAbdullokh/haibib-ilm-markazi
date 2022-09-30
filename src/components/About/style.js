@@ -5,8 +5,7 @@ export const Wrapper = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: blue;
-  /* background-image: url(${bg}); */
+  background-image: url(${bg});
 `;
 
 export const Container = styled.div`
