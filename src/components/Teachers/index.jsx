@@ -45,31 +45,33 @@ const Teachers = () => {
   };
 
   return (
-    <Wrapper>
-      <Container>
-        <div className="titleWrap">
-          <div className="line"></div>
-          <Container.Img src={document} alt="question" />
-          <div className="line"></div>
-        </div>
-        <p className="title">BIZNING USTOZLARIMIZ</p>
-        <p className="desc">BIZNING FAXRIMIZ</p>
-        <CardWrapper>
-          <Slider {...settings}>
-            {teacherData.map((value) => {
-              return (
-                <Card>
-                  <img src={value.img} alt={value.name} />
-                  <Card.Name>{value.name}</Card.Name>
-                  <Card.Course>{value.course}</Card.Course>
-                  <Button>Batafsil</Button>
-                </Card>
-              );
-            })}
-          </Slider>
-        </CardWrapper>
-      </Container>
-    </Wrapper>
+    // <Wrapper>
+    //   <Container>
+    // <div className="titleWrap">
+    //   <div className="line"></div>
+    //   <Container.Img src={document} alt="question" />
+    //   <div className="line"></div>
+    // </div>
+    // <p className="title">BIZNING USTOZLARIMIZ</p>
+    // <p className="desc">BIZNING FAXRIMIZ</p>
+    // <CardWrapper>
+    <Slider {...settings}>
+      {teacherData.map((value) => {
+        return (
+          <Card>
+            <img src={value.img} alt={value.name} />
+            <Card.Name>{value.name}</Card.Name>
+            <Card.Course>{value.course}</Card.Course>
+            <Button>Batafsil</Button>
+          </Card>
+        );
+      })}
+      {/* <Card> */}
+      {/* </Card> */}
+    </Slider>
+    // </CardWrapper>
+    //   </Container>
+    // </Wrapper>
   );
 };
 
