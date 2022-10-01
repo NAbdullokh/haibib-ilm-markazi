@@ -32,8 +32,8 @@ i18.use(initReactI18next).init({
     ru: { translation: translationRu },
     ar: { translation: translationAr },
   },
-  lang: "en",
-  fallbackLng: "en",
+  lang: "uz",
+  fallbackLng: "uz",
   interpolation: { escapeValue: false },
 });
 const Nav1 = () => {

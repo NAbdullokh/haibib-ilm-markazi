@@ -11,6 +11,8 @@ const Teachers = () => {
           <Container.Img src={document} alt="question" />
           <div className="line"></div>
         </div>
+        <p className="title">BIZNING USTOZLARIMIZ</p>
+        <p className="desc">BIZNING FAXRIMIZ</p>
       </Container>
     </Wrapper>
   );
