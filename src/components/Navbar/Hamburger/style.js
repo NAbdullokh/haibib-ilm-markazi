@@ -22,7 +22,7 @@ export const Ul = styled.ul`
     z-index: 999;
     top: 13.4rem;
     left: 0;
-    height: 100%;
+    height: calc(100vh - 5vh);
     width: 100%;
     padding-top: 5rem;
     transition: transform 0.3s ease-in-out;
