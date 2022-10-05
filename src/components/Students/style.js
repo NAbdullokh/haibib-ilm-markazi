@@ -9,4 +9,5 @@ export const Wrapper = styled.div`
 export const Container = styled.div`
   width: 100%;
   max-width: var(--maxWidth);
+  padding: 25px 130px;
 `;

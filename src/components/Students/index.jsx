@@ -1,7 +1,12 @@
 import React from "react";
+import { Container, Wrapper } from "./style";
 
 const Students = () => {
-  return <div>Students</div>;
+  return (
+    <Wrapper>
+      <Container></Container>
+    </Wrapper>
+  );
 };
 
 export default Students;
