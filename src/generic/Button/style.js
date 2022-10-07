@@ -9,6 +9,11 @@ const getType = (type) => {
         color: "#ffffff",
       };
 
+    case "footer":
+      return {
+        background: "#242C42",
+        color: "#ffffff",
+      };
     default:
       return {
         background: " #28A745",

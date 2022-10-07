@@ -1,6 +1,6 @@
 import userImg from "../assets/img/userImg.png";
 
-export const teacherData = [
+export const studentData = [
   {
     id: 1,
     name: "OZODA MAXKAMOVA",

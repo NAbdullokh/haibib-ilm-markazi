@@ -29,6 +29,17 @@
   margin: auto;
 }
 
+.subTitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+
 .line {
   width: 100px;
   height: 6px;

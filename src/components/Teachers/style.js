@@ -11,7 +11,7 @@ export const Container = styled.div`
   width: 100%;
   max-width: var(--maxWidth);
   margin: auto;
-  padding: 25px 130px;
+  padding: 25px 130px 100px;
   display: flex;
   flex-direction: column;
   /* align-items: center; */

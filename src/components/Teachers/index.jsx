@@ -21,7 +21,7 @@ const Teachers = () => {
           <Swiper spaceBetween={50} slidesPerView={3}>
             {teacherData.map((value) => {
               return (
-                <SwiperSlide>
+                <SwiperSlide key={value.id}>
                   <Card>
                     <img src={value.img} alt={value.name} />
                     <Card.Name>{value.name}</Card.Name>
