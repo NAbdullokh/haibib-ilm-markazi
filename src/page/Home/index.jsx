@@ -2,6 +2,7 @@ import About from "../../components/About";
 import Slider from "../../components/Carousel";
 import Courses from "../../components/Courses";
 import Facts from "../../components/Facts";
+import News from "../../components/News";
 import Question from "../../components/Question";
 import Students from "../../components/Students";
 import Teachers from "../../components/Teachers";
@@ -18,6 +19,7 @@ const Home = () => {
       <Choose />
       <Teachers />
       <Students />
+      <News />
     </div>
   );
 };
