@@ -44,7 +44,7 @@ const Students = () => {
           <div className="desc">BIZGA QO’SHILING</div>
           <div className="subTitle">Hoziroq ro’yxatdan o’ting</div>
         </div>
-        <Button type={"footer"} width={"250px"}>
+        <Button height={"50px"} type={"footer"} width={"250px"}>
           BOG’LANISH
         </Button>
       </FooterComponent>

@@ -28,17 +28,20 @@ Container.Img = styled.img``;
 export const BoxWrapper = styled.div`
   display: flex;
   width: 100%;
-  background-color: red;
   align-items: center;
+  margin-top: 25px;
 `;
 
 export const Box1 = styled.div`
   flex: 1;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
 `;
 
 Box1.Img = styled.img`
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 `;
 
 export const Box2 = styled.div`
@@ -55,4 +58,10 @@ Box2.Text = styled.p`
   align-items: center;
   text-align: ${({ type }) => (type == "title" ? "center" : "start")};
   color: #ffffff;
+`;
+
+export const BtnWrapper = styled.div`
+  width: 200px;
+  margin-left: auto;
+  height: 50px;
 `;
