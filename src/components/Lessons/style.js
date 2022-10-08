@@ -37,4 +37,12 @@ export const Card = styled.div`
   display: flex;
   gap: 20px;
   flex-direction: column;
+  background-color: white;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+`;
+
+export const BtnWrap = styled.a`
+  width: 150px;
 `;

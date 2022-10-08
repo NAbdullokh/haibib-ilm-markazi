@@ -1,7 +1,8 @@
 import React from "react";
-import { Card, Container, VideWrap, Wrapper } from "./style";
+import { BtnWrap, Card, Container, VideWrap, Wrapper } from "./style";
 import play from "../../assets/icon/play.svg";
 import { lessonsData } from "../../mock/lessonsData";
+import Button from "../../generic/Button";
 
 const Lessons = () => {
   return (
@@ -19,7 +20,12 @@ const Lessons = () => {
             return (
               <Card>
                 <iframe src={value.frame}></iframe>
-                <p className="desc">{value.title}</p>
+                <p style={{ color: "black" }} className="desc">
+                  {value.title}
+                </p>
+                <BtnWrap href={value.frame}>
+                  <Button height={"50px"}>Korish</Button>
+                </BtnWrap>
               </Card>
             );
           })}
