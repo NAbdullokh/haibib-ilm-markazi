@@ -1,6 +1,7 @@
 import React from "react";
-import { Container, Wrapper } from "./style";
+import { Card, Container, VideWrap, Wrapper } from "./style";
 import play from "../../assets/icon/play.svg";
+import { lessonsData } from "../../mock/lessonsData";
 
 const Lessons = () => {
   return (
@@ -13,6 +14,16 @@ const Lessons = () => {
         </div>
         <p className="title">MEDIA</p>
         <div className="desc">DARSLARIMIZDAN LAVHALAR</div>
+        <VideWrap>
+          {lessonsData.map((value) => {
+            return (
+              <Card>
+                <iframe src={value.frame}></iframe>
+                <p className="desc">{value.title}</p>
+              </Card>
+            );
+          })}
+        </VideWrap>
       </Container>
     </Wrapper>
   );
