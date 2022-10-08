@@ -34,14 +34,10 @@ export const BoxWrapper = styled.div`
 
 export const Box1 = styled.div`
   flex: 1;
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
 `;
 
 Box1.Img = styled.img`
   width: 100%;
-  /* height: 100%; */
 `;
 
 export const Box2 = styled.div`
