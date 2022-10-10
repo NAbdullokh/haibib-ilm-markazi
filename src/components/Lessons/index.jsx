@@ -23,7 +23,7 @@ const Lessons = () => {
                 <p style={{ color: "black" }} className="desc">
                   {value.title}
                 </p>
-                <BtnWrap href={value.frame}>
+                <BtnWrap href={value.frame} target="_blank">
                   <Button height={"50px"}>Korish</Button>
                 </BtnWrap>
               </Card>
