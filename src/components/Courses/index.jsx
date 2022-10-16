@@ -3,8 +3,10 @@ import { Card, Container, Icon, Wrapper, CardWrapper } from "./style";
 import courses from "../../assets/img/courses.png";
 import { courseData } from "../../mock/courses";
 import right from "../../assets/icon/right.svg";
+import { useNavigate } from "react-router-dom";
 
 const Courses = () => {
+  const navigate = useNavigate();
   return (
     <Wrapper id="courses">
       <Container>
@@ -22,7 +24,10 @@ const Courses = () => {
         <CardWrapper>
           {courseData.map((value) => {
             return (
-              <Card key={value.id}>
+              <Card
+                onClick={() => navigate(`/courses/${value.id}`)}
+                key={value.id}
+              >
                 <img className="course-img" src={value.img} alt={value.title} />
                 <Card.Title>
                   {value.title} <Icon src={right} alt="" />

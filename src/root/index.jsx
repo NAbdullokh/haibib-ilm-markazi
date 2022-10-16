@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import { pageItems } from "../utils/pages";
 import NotFound from "../page/NotFound";
 import Login from "../page/Login";
+import CourseDetails from "../components/CourseDetail";
 
 const Root = () => {
   return (
@@ -18,6 +19,7 @@ const Root = () => {
               );
             })}
           </Route>
+          <Route path="/courses/:id" element={<CourseDetails />} />
           <Route path="*" element={<NotFound />} />
         </Route>
         <Route path="/login" element={<Login />} />

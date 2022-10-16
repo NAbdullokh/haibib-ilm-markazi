@@ -7,6 +7,18 @@ import Button from "../../generic/Button";
 import "swiper/css";
 
 const Teachers = () => {
+  // const responsive = {
+  //   500: {
+  //     slidesPerView: 1
+  //   }
+  //   1000: {
+  //     slidesPerView: 2
+  //   }
+  //   1200: {
+  //     slidesPerView:4
+  //   }
+
+  // }
   return (
     <Wrapper>
       <Container>
@@ -31,8 +43,6 @@ const Teachers = () => {
                 </SwiperSlide>
               );
             })}
-            {/* <Card> */}
-            {/* </Card> */}
           </Swiper>
         </CardWrapper>
       </Container>
