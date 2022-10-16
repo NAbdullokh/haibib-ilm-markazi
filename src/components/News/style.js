@@ -30,6 +30,10 @@ export const BoxWrapper = styled.div`
   width: 100%;
   align-items: center;
   margin-top: 25px;
+  @media (max-width: 1100px) {
+    flex-direction: column;
+    gap: 30px;
+  }
 `;
 
 export const Box1 = styled.div`
@@ -54,10 +58,17 @@ Box2.Text = styled.p`
   align-items: center;
   text-align: ${({ type }) => (type == "title" ? "center" : "start")};
   color: #ffffff;
+  @media (max-width: 800px) {
+    font-size: 20px;
+    text-align: center;
+  }
 `;
 
 export const BtnWrapper = styled.div`
   width: 200px;
   margin-left: auto;
   height: 50px;
+  @media (max-width: 800px) {
+    margin: auto;
+  }
 `;

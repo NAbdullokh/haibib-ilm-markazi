@@ -58,6 +58,8 @@ export const FooterComponent = styled.div`
   background: #28a745;
   padding: 20px 160px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  @media (max-width: 850px) {
+    display: none;
+  }
 `;

@@ -18,7 +18,7 @@ const Lessons = () => {
         <VideWrap>
           {lessonsData.map((value) => {
             return (
-              <Card>
+              <Card key={value.id}>
                 <iframe src={value.frame}></iframe>
                 <p style={{ color: "black" }} className="desc">
                   {value.title}
