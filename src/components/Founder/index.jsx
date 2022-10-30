@@ -5,6 +5,7 @@ import {
   BoxWrapper,
   BtnWrapper,
   Container,
+  FooterCon,
   Wrapper,
 } from "./style";
 import userImg from "../../assets/icon/user.svg";
@@ -46,6 +47,10 @@ const Founder = () => {
           </Box2>
         </BoxWrapper>
       </Container>
+      <FooterCon>
+        O’zingizga qulay vaqtda “HABIB ilm markazi”ga tashrif buyuring va
+        hammasiga o’zingiz guvoh bo’ling!
+      </FooterCon>
     </Wrapper>
   );
 };

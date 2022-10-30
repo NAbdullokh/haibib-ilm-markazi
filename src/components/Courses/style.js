@@ -45,6 +45,7 @@ export const Card = styled.div`
   align-items: center;
   gap: 10px;
   margin-bottom: 20px;
+
   :hover {
     transform: scale(1.02);
     cursor: pointer;
@@ -52,6 +53,11 @@ export const Card = styled.div`
   &:hover ${Icon} {
     transform: translateX(5px);
   }
+`;
+
+Card.Img = styled.img`
+  width: 100%;
+  height: 100%;
 `;
 
 Card.Title = styled.p`

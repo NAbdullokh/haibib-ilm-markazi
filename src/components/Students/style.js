@@ -11,12 +11,23 @@ export const Container = styled.div`
   width: 100%;
   max-width: var(--maxWidth);
   margin: auto;
-  padding: 25px 130px;
+  padding: 25px 130px 100px;
   display: flex;
   flex-direction: column;
+  @media (max-width: 1450px) {
+    padding: 25px 50px;
+  }
+  @media (max-width: 400px) {
+    padding: 25px 20px;
+  }
 `;
 
-Container.Img = styled.img`x`;
+Container.Img = styled.img`
+  @media (max-width: 500px) {
+    width: 20%;
+    height: 20%;
+  }
+`;
 
 export const CardWrapper = styled.div`
   margin-top: 25px;
@@ -32,13 +43,19 @@ export const Card = styled.div`
   background-color: white;
 `;
 
+Card.Img = styled.img`
+  width: 75%;
+  height: 75%;
+  margin-bottom: 20px;
+`;
+
 Card.Name = styled.p`
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-
   margin: auto;
   color: #000000;
+  text-align: center;
 `;
 
 Card.Course = styled.p`
@@ -50,6 +67,9 @@ Card.Course = styled.p`
   align-items: center;
   text-align: center;
   color: #009f3c;
+  @media (max-width: 1100px) {
+    font-size: 25px;
+  }
 `;
 
 export const FooterComponent = styled.div`

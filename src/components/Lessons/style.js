@@ -23,7 +23,12 @@ export const Container = styled.div`
   }
 `;
 
-Container.Img = styled.img``;
+Container.Img = styled.img`
+  @media (max-width: 500px) {
+    width: 20%;
+    height: 20%;
+  }
+`;
 
 export const VideWrap = styled.div`
   width: 100%;
@@ -41,6 +46,11 @@ export const Card = styled.div`
   align-items: center;
   padding: 20px;
   border-radius: 10px;
+  @media (max-width: 390px) {
+  }
+  iframe {
+    width: 100%;
+  }
 `;
 
 export const BtnWrap = styled.a`

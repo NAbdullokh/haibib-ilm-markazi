@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   background: #111828;
+  padding: 0 0 30px 0;
 `;
 
 export const Container = styled.div`
@@ -23,7 +24,12 @@ export const Container = styled.div`
   }
 `;
 
-Container.Img = styled.img``;
+Container.Img = styled.img`
+  @media (max-width: 500px) {
+    width: 20%;
+    height: 20%;
+  }
+`;
 
 export const BoxWrapper = styled.div`
   display: flex;
@@ -105,4 +111,23 @@ export const Box2 = styled.div`
 Box2.Img = styled.img`
   width: 100%;
   height: 100%;
+`;
+
+export const FooterCon = styled.div`
+  width: 100%;
+  background: #009f3c;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+  display: flex;
+  padding: 25px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  mix-blend-mode: normal;
+  @media (max-width: 600px) {
+    font-size: 22px;
+  }
 `;

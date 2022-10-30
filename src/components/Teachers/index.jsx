@@ -7,18 +7,30 @@ import Button from "../../generic/Button";
 import "swiper/css";
 
 const Teachers = () => {
-  // const responsive = {
-  //   500: {
-  //     slidesPerView: 1
-  //   }
-  //   1000: {
-  //     slidesPerView: 2
-  //   }
-  //   1200: {
-  //     slidesPerView:4
-  //   }
-
-  // }
+  const teamSlider = {
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      800: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+    },
+  };
   return (
     <Wrapper>
       <Container>
@@ -30,12 +42,12 @@ const Teachers = () => {
         <p className="title">BIZNING USTOZLARIMIZ</p>
         <p className="desc">BIZNING FAXRIMIZ</p>
         <CardWrapper>
-          <Swiper spaceBetween={50} slidesPerView={3}>
+          <Swiper {...teamSlider} spaceBetween={50} slidesPerView={3}>
             {teacherData.map((value) => {
               return (
                 <SwiperSlide key={value.id}>
                   <Card>
-                    <img src={value.img} alt={value.name} />
+                    <Card.Img src={value.img} alt={value.name} />
                     <Card.Name>{value.name}</Card.Name>
                     <Card.Course>{value.course}</Card.Course>
                     <Button>Batafsil</Button>

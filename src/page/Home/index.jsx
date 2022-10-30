@@ -4,6 +4,7 @@ import Courses from "../../components/Courses";
 import Facts from "../../components/Facts";
 import Founder from "../../components/Founder";
 import Lessons from "../../components/Lessons";
+import GoogleMap from "../../components/Map";
 import News from "../../components/News";
 import Question from "../../components/Question";
 import Students from "../../components/Students";
@@ -24,6 +25,7 @@ const Home = () => {
       <News />
       <Lessons />
       <Founder />
+      <GoogleMap />
     </div>
   );
 };

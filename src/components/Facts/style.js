@@ -24,7 +24,12 @@ export const Container = styled.div`
   }
 `;
 
-Container.Img = styled.img``;
+Container.Img = styled.img`
+  @media (max-width: 500px) {
+    width: 20%;
+    height: 20%;
+  }
+`;
 
 Container.MainTitle = styled.p`
   font-style: normal;
