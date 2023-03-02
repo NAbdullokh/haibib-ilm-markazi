@@ -11,7 +11,8 @@ const Nav2 = () => {
   return (
     <Wrapper>
       <Container>
-        <img onClick={() => navigate("/")} src={logo} alt="" />
+        {/* <img onClick={() => navigate("/")} src={logo} alt="" /> */}
+        249 maktab
         <ItemWrapper>
           {navbarItem.map((value) => {
             return (
@@ -21,7 +22,6 @@ const Nav2 = () => {
             );
           })}
         </ItemWrapper>
-
         <BtnWrapper onClick={() => navigate("/login")}>
           <Button width="200px" height="80px">
             Ariza Topshirish

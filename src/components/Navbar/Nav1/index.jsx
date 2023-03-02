@@ -49,12 +49,12 @@ const Nav1 = () => {
           <TwoWrapper>
             <IconWrapper>
               <Icon src={gmail} alt="" />
-              <Text>habibilmmarkazi@gmail.com</Text>
+              <Text>249maktab@gmail.com</Text>
             </IconWrapper>
 
             <IconWrapper>
               <Icon src={location} alt="" />
-              <Text>{t("address")}</Text>
+              <Text>{t(" Tashkent, Almazar, Street Nozimakhanum, 3")}</Text>
             </IconWrapper>
           </TwoWrapper>
 
@@ -66,8 +66,7 @@ const Nav1 = () => {
             <IconWrapper>
               <Icon src={phone} alt="" />
               <div className="flex">
-                <Text>+998 (95) 506 66 69</Text>
-                <Text>+998 (93) 666 66 73</Text>
+                <Text>+998 (71) 246 13 54</Text>
               </div>
             </IconWrapper>
           </TelWrapper>
